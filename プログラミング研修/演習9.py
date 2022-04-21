@@ -1,10 +1,10 @@
 import sys
 import random
 
-def typoglycemia(text: str):
+def typoglycemia(text: str)->str:
     """入力文章でタイポグリセミア"""
 
-    def random_word(word: str):
+    def random_word(word: str)->str:
         """文章を構成している単語の文字を並べ替える"""
         if len(word) < 4:  # 3文字以下はそのまま
             return word
